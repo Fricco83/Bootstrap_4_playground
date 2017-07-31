@@ -1,0 +1,119 @@
+.hero {
+	background-image: url('../images/hero-bg.jpg');
+	background-size: cover;
+	background-position: bottom center;
+	padding-top: 20vh;
+	padding-bottom: 25vh;	
+}
+
+.about {
+	background: $black;
+}
+
+.about-title {
+	background: url('../images/about-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 45vw;
+}
+
+.about-text {
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+
+	@include media-breakpoint-up(md) {
+		padding-top: 10vh;
+		padding-bottom: 15vh;
+	}
+}
+
+.band-members {
+	position: relative;
+}
+
+.band-member {
+	background-color: $black;
+	margin-bottom: 1.5em;
+	box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		top: -3em;
+		z-index: 10;
+	}
+}
+
+.band-member-name {
+	text-transform: uppercase;
+	margin-bottom: 0.25em;
+}
+
+.band-member-position {
+	color: $gray-light;
+}
+
+.music {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.music-container {
+	background: $black;
+	box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+}
+
+.music-title {
+	margin-bottom: 0.5em;
+}
+
+.music-cta {
+	margin-top: 2em;
+}
+
+.shows {
+	margin-top: 2em;
+	font-size: .9em;
+}
+
+.show-info > * {
+	margin-bottom: 0;
+}
+
+.show-info {
+	display: flex;
+	flex-direction: column;
+
+	.btn {
+		margin-top: auto;
+	}
+}
+
+.date {
+	font-weight: bold;
+	margin-top: 1.25em;
+	
+	&::before {
+		content: '\f133';
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-right: 8px;
+		font-size: 1em;
+	}
+}
+
+.price {
+	font-weight: bold;
+
+	small {
+		font-weight: light;
+	}
+
+	&::before {
+		content: '\f145';
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-right: 8px;
+		font-size: 1em;
+	}
+}

@@ -1,0 +1,16 @@
+body {
+	font-weight: 300;
+	padding-top: 70px; //height of navbar
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $decorative;
+}
+
+h1 {
+	color: $brand-primary;
+}
+
+.lead {
+	margin-bottom: 1.5em;
+}
